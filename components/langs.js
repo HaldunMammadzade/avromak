@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import useTranslation from "next-translate/useTranslation";
 // import i18nConfig from "../../../i18n.json";
+import { useRouter } from "next/router";
 const Langs = () => {
+  
   const { t, lang } = useTranslation("common");
   const [language, setLang] = useState("az");
-
+  const router = useRouter();
   useEffect(() => {
     setLang(
       localStorage.getItem("language") ? localStorage.getItem("language") : "az"

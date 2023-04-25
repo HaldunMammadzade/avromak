@@ -3,11 +3,44 @@ import React from "react";
 import Accordion from "react-bootstrap/Accordion";
 import useTranslation from "next-translate/useTranslation";
 import i18nConfig from "../i18n.json";
-
+import Slider from "react-slick";
 const { locales } = i18nConfig;
 
 export default function Home() {
   const { t, lang } = useTranslation("common");
+  const pageslider = React.createRef();
+  const settings = {
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 1000,
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   return (
     <>
       <Head>
@@ -17,15 +50,23 @@ export default function Home() {
         <div className="container-fluid">
           <div className="d-flex align-items-center section-content">
             <div className="animated fadeInLeft">
-              <h1>Zövqü və ruhu zənginləşdirən keyfiyyətli məhsul hazırlamaqla uğur qazanırıq</h1>
+              <h1>
+                Zövqü və ruhu zənginləşdirən keyfiyyətli məhsul hazırlamaqla
+                uğur qazanırıq
+              </h1>
             </div>
             <div>
-              <img className="main-img" src="/static/arrow.svg" alt="" />
+              <a href="/about-us">
+                <img className="main-arrow" src="/static/arrow.svg" alt="" />
+              </a>
             </div>
           </div>
         </div>
         <div className="position-relative marquee-container container-fluid">
           <div className="marquee d-flex justify-content-around">
+            <span>{t("partner")}</span>
+            <span>{t("partner")}</span>
+            <span>{t("partner")}</span>
             <span>{t("partner")}</span>
             <span>{t("partner")}</span>
             <span>{t("partner")}</span>
@@ -41,18 +82,23 @@ export default function Home() {
 
       <section>
         <div className="about-cover mb-5 d-lg-block d-none">
-          <img className="main-img" src="/static/home-main.jpg" alt="" />
+          <img className="main-arrow" src="/static/home-main.jpg" alt="" />
         </div>
-        <div className="container-fluid mt-sm-5 mt-2 pt-sm-5 pt-2">
+        <div className="container-fluid mt-sm-5 mt-2 ">
           <div className="row section-content align-items-end">
             <div className="col-md-6 col-12">
-            <img className="main-img" src="/static/img1.jpg" alt="" />
+              <img className="main-img" src="/static/img1.jpg" alt="" />
             </div>
             <div className="col-md-6 col-12 ">
-              <p>{t("aboutDesc")}</p>
-              <button className="mt-4">
-                <a href="/about-us">{t("buttonMore")}</a>
-              </button>
+              <div>
+                <p>{t("aboutDesc")}</p>
+                <br />
+                <p>{t("aboutDesc1")}</p>
+              </div>
+              <a href="" className="d-flex mt-5">
+                KEYFİYYƏT RƏMZİMİZDİR
+                <img className="ml-2" src="/static/arrow-black.png" alt="" />
+              </a>
             </div>
           </div>
         </div>
@@ -61,7 +107,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="statistics border-t border-b">
+      {/* <section className="statistics border-t border-b">
         <div className="row align-items-center">
           <div className="col-md-6 col-12 border-b border-r pr-lg-0">
             <div className="container-fluid my-4">
@@ -88,9 +134,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section>
+      {/* <section>
         <div className="my-5">
           <div className="container-fluid my-5">
             <h1 className="why-choose-us">{t("choooseUs")}</h1>
@@ -146,9 +192,9 @@ export default function Home() {
             </Accordion.Item>
           </Accordion>
         </div>
-      </section>
+      </section> */}
 
-      <section className="products py-lg-0 py-5">
+      {/* <section className="products py-lg-0 py-5">
         <div className="container-fluid">
           <div className="d-xl-flex d-block justify-content-between my-xl-5 py-lg-5">
             <div className="mt-xl-5 mt-3 pt-xl-5 mt-3 product-desc">
@@ -208,9 +254,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="projects">
+      {/* <section className="projects">
         <div className="container-fluid">
           <div className=" animated fadeInLeft d-flex justify-content-between align-items-center mt-4 mb-2">
             <h1 className="mb-3 mt-4">{t("projects")}</h1>
@@ -251,7 +297,140 @@ export default function Home() {
             </a>
           </div>
         </div>
+      </section> */}
+
+      <section className="container-fluid mb-5 main-products">
+        <h2>{t("products")}</h2>
+        <div className="row">
+          <div className="col-lg-4 col-sm-6 col-12 position-relative">
+            <img className="w-100" src="/static/img2.jpg" alt="" />
+            <p>Ət məhsulları</p>
+            <a
+              href=""
+              className="d-flex justify-content-between border-b mt-3 py-2"
+            >
+              Rosko
+              <img
+                className="ml-2 object-fit"
+                src="/static/arrow-black.png"
+                alt=""
+              />
+            </a>
+            <a
+              href=""
+              className="d-flex justify-content-between border-b mt-3 py-2"
+            >
+              Ustdad
+              <img
+                className="ml-2 object-fit"
+                src="/static/arrow-black.png"
+                alt=""
+              />
+            </a>
+            <a
+              href=""
+              className="d-flex justify-content-between border-b mt-3 py-2"
+            >
+              Dadim
+              <img
+                className="ml-2 object-fit"
+                src="/static/arrow-black.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div className="col-lg-4 col-sm-6 col-12 position-relative">
+            <img className="w-100" src="/static/img3.png" alt="" />
+            <p>Makaron</p>
+            <a
+              href=""
+              className="d-flex justify-content-between border-b mt-3 py-2"
+            >
+              Favelli
+              <img
+                className="ml-2 object-fit"
+                src="/static/arrow-black.png"
+                alt=""
+              />
+            </a>
+            <a
+              href=""
+              className="d-flex justify-content-between border-b mt-3 py-2"
+            >
+              Makara
+              <img
+                className="ml-2 object-fit"
+                src="/static/arrow-black.png"
+                alt=""
+              />
+            </a>
+            <a
+              href=""
+              className="d-flex justify-content-between border-b mt-3 py-2"
+            >
+              Kelebek
+              <img
+                className="ml-2 object-fit"
+                src="/static/arrow-black.png"
+                alt=""
+              />
+            </a>
+            <a
+              href=""
+              className="d-flex justify-content-between border-b mt-3 py-2"
+            >
+              Rizzi
+              <img
+                className="ml-2 object-fit"
+                src="/static/arrow-black.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div className="col-lg-4 col-sm-6 col-12 position-relative">
+            <img className="w-100" src="/static/img4.png" alt="" />
+            <p>Un məhsulları</p>
+            <a
+              href=""
+              className="d-flex justify-content-between border-b mt-3 py-2"
+            >
+              Favelli Un
+              <img
+                className="ml-2 object-fit"
+                src="/static/arrow-black.png"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
       </section>
+
+      <section className="brands my-5 pt-5 container-fluid">
+        <div className="text-center">
+          <h4>BRENDLƏR</h4>
+          <p >
+            “Avromak” MMC-nin əsas məqsədi istehsal və distribüterlik etdiyi
+            məhsulların çeşidlərinin və keyfiyyətinin optimallaşdırılmasıdır.
+          </p>
+        </div>
+
+        <Slider
+          className="align-items-center mt-5 brands"
+          ref={(slider) => (pageslider.current = slider)}
+          {...settings}
+        >
+          <img className="ml-2 object-fit " src="/static/brand1.png" alt="" />
+          <img className="ml-2 object-fit " src="/static/brand2.png" alt="" />
+          <img className="ml-2 object-fit " src="/static/brand3.png" alt="" />
+          <img className="ml-2 object-fit " src="/static/brand4.png" alt="" />
+          <img className="ml-2 object-fit " src="/static/brand5.png" alt="" />
+          <img className="ml-2 object-fit " src="/static/brand6.png" alt="" />
+          <img className="ml-2 object-fit " src="/static/brand7.png" alt="" />
+          <img className="ml-2 object-fit " src="/static/brand4.png" alt="" />
+        </Slider>
+      </section>
+
+      <section></section>
     </>
   );
 }

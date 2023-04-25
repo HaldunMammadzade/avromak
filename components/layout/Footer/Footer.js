@@ -6,7 +6,7 @@ const { locales } = i18nConfig;
 const Footer = () => {
   const { t, lang } = useTranslation("common");
   return (
-    <div className="footer">
+    <div className="footer mt-5">
       {/* <div className="container-fluid pt-5 pb-3">
                 <div className="row align-items-strech p-0 m-0">
                     <div className="col-lg-6 col-12 d-flex justify-content-between p-0">
@@ -48,12 +48,26 @@ const Footer = () => {
                     <address>DESIGN AND DEVELOPED BY MARTIAN STUDIO</address>
                 </div>
             </div> */}
-      <div className="footer-img">
-        <img src="/static/footer1.png" alt="" />
-        <img src="/static/footer2.png" alt="" />
-        <img src="/static/footer3.png" alt="" />
-        <img src="/static/footer4.png" alt="" />
-        <img src="/static/footer5.png" alt="" />
+      <div className="footer-img d-flex ">
+        <div>
+          <img src="/static/footer1.jpg" alt="" />
+        </div>
+        <div>
+          <img src="/static/footer2.jpg" alt="" />
+        </div>
+        <div>
+          <img src="/static/footer3.jpg" alt="" />
+        </div>
+        <div>
+          <img src="/static/footer4.jpg" alt="" />
+        </div>
+        <div>
+          <img src="/static/footer5.jpg" alt="" />
+        </div>
+        {/* <img src="/static/footer2.jpg" alt="" />
+        <img src="/static/footer3.jpg" alt="" />
+        <img src="/static/footer4.jpg" alt="" />
+        <img src="/static/footer5.jpg" alt="" /> */}
       </div>
       <div className="container-fluid">
         <h1 className="my-3">AVROMAK</h1>
@@ -71,9 +85,7 @@ const Footer = () => {
             <a href="/about-us" className="mr-sm-4 mr-2">
               {t("about")}
             </a>
-            <a href="/about-us" >
-              {t("about")}
-            </a>
+            <a href="/about-us">{t("about")}</a>
           </div>
           <div className="d-flex">
             <a href="/about-us" className="mr-sm-4 mr-2 d-flex">
@@ -81,7 +93,7 @@ const Footer = () => {
               <img className="ml-1" src="/static/arrow-footer.png" alt="" />
             </a>
             <a href="/about-us" className="mr-sm-4 mr-2 d-flex">
-            Facebook
+              Facebook
               <img className="ml-1" src="/static/arrow-footer.png" alt="" />
             </a>
             <a href="/about-us" className="mr-sm-4 mr-2 d-flex">
