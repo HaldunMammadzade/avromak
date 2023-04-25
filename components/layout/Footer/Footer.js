@@ -71,21 +71,21 @@ const Footer = () => {
       </div>
       <div className="container-fluid">
         <h1 className="my-3">AVROMAK</h1>
-        <div className="d-flex justify-content-between">
+        <div className="d-flex justify-content-between " >
           <div className="d-flex">
             <a href="/about-us" className="mr-sm-4 mr-2">
               {t("about")}
             </a>
-            <a href="/about-us" className="mr-sm-4 mr-2">
-              {t("about")}
+            <a href="/production" className="mr-sm-4 mr-2">
+            İstehsalat
             </a>
             <a href="/about-us" className="mr-sm-4 mr-2">
-              {t("about")}
+            Retail
             </a>
             <a href="/about-us" className="mr-sm-4 mr-2">
-              {t("about")}
+            İxrac  
             </a>
-            <a href="/about-us">{t("about")}</a>
+            <a href="/contact">Əlaqə</a>
           </div>
           <div className="d-flex">
             <a href="/about-us" className="mr-sm-4 mr-2 d-flex">
@@ -107,10 +107,11 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="d-flex justify-content-between info mt-sm-5 mt-3">
+        <div className="d-flex justify-content-between info mt-sm-5 mt-3 footer-border pb-4">
           <div className="d-flex align-items-center">
             <span className="mr-2">Ünvan:</span>
-            <p className="m-0">Ziya Bünyadov pr. 13,Bakı, Azərbaycan AZ1108</p>
+            <p className="m-0">Ziya Bünyadov pr. 13, <br/>
+            Bakı, Azərbaycan AZ1108</p>
           </div>
 
           <div className="d-flex align-items-center">
@@ -127,6 +128,11 @@ const Footer = () => {
             <span className="mr-2">Telefon: </span>
             <p className="m-0">(+994) 012 310 11 16</p>
           </div>
+        </div>
+
+        <div className="d-sm-flex d-block justify-content-between my-4 copy-writer">
+          <p>2022 Avromak MMC  |  Bütün hüquqlar qorunur</p>
+          <p>Design and development by Martian Studio</p>
         </div>
       </div>
     </div>

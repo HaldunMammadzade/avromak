@@ -92,19 +92,24 @@ const Header = (props) => {
         <div className="menu align-items-center  position-relative">
           <ul className="p-0 nav-links my-lg-0 my-5">
             <li>
-              <a href="/about-us">{t("about")}</a>
+              <a href="/about-us" className="d-flex align-items-baseline">
+              Haqqımızda
+              <img className="ml-4" src="/static/header-arrow.svg" alt=""/>
+              </a>
             </li>
             <li>
-              <a href="/products">{t("products")}</a>
+              <a href="/production" className="d-flex align-items-baseline">İstehsalat
+              <img className="ml-4" src="/static/header-arrow.svg" alt=""/></a>
             </li>
             <li>
-              <a href="/projects">{t("projects")}</a>
+              <a href="/projects" className="d-flex align-items-baseline">Retail
+              <img className="ml-4" src="/static/header-arrow.svg" alt=""/></a>
             </li>
             <li>
-              <a href="/sustainability">{t("sustain")}</a>
+              <a href="/sustainability" className="d-flex align-items-baseline">İxrac <img className="ml-4" src="/static/header-arrow.svg" alt=""/> </a>
             </li>
             <li>
-              <a href="/contact">{t("contact")}</a>
+              <a href="/contact" className="d-flex align-items-baseline">{t("contact")} <img className="ml-4" src="/static/header-arrow.svg" alt=""/></a>
             </li>
           </ul>
 

@@ -35,7 +35,7 @@ export default function Home() {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
@@ -56,7 +56,7 @@ export default function Home() {
               </h1>
             </div>
             <div>
-              <a href="/about-us">
+              <a href="/production">
                 <img className="main-arrow" src="/static/arrow.svg" alt="" />
               </a>
             </div>
@@ -64,6 +64,14 @@ export default function Home() {
         </div>
         <div className="position-relative marquee-container container-fluid">
           <div className="marquee d-flex justify-content-around">
+            <span>{t("partner")}</span>
+            <span>{t("partner")}</span>
+            <span>{t("partner")}</span>
+            <span>{t("partner")}</span>
+            <span>{t("partner")}</span>
+            <span>{t("partner")}</span>
+            <span>{t("partner")}</span>
+            <span>{t("partner")}</span>
             <span>{t("partner")}</span>
             <span>{t("partner")}</span>
             <span>{t("partner")}</span>
@@ -408,7 +416,7 @@ export default function Home() {
       <section className="brands my-5 pt-5 container-fluid">
         <div className="text-center">
           <h4>BRENDLƏR</h4>
-          <p >
+          <p>
             “Avromak” MMC-nin əsas məqsədi istehsal və distribüterlik etdiyi
             məhsulların çeşidlərinin və keyfiyyətinin optimallaşdırılmasıdır.
           </p>
@@ -430,7 +438,53 @@ export default function Home() {
         </Slider>
       </section>
 
-      <section></section>
+      <section className="choose-us container-fluid">
+        <div className="row ">
+          <div className="col-lg-3 col-sm-6 col-12">
+            <h2>{t("choooseUs")}</h2>
+          </div>
+          <div className="col-lg-3 col-sm-6 col-12">
+            <img src="/static/choose1.png" alt="" />
+            <p>texnologİya</p>
+            <span>
+              Məhsullar tam gigiyenik şəraitdə və innovativ texnologiyalar
+              vasitələr ilə istehsal olunur.
+            </span>
+          </div>
+          <div className="col-lg-3 col-sm-6 col-12">
+            <img src="/static/choose2.png" alt="" />
+            <p>PEŞƏKARLIQ</p>
+            <span>
+              Mehriban və peşəkar komanda ilə “Avromak” MMC qoyduğu hədəflərə
+              çatmaqdadır.
+            </span>
+          </div>
+          <div className="col-lg-3 col-sm-6 col-12">
+            <img src="/static/choose3.png" alt="" />
+            <p>KEYFİYYƏT</p>
+            <span>
+              Məhsullarımız AZS 731-2012 “Halal Qida” sertifkatına layiq
+              görülmüşdür.{" "}
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section className="catalog border-t border-b  container-fluid">
+        <div className="row">
+          <div className="col-lg-3 col-sm-6 col-12 border-r py-5 catalog-button">
+            <h2>Məhsul kataloqu</h2>
+            <p>
+              Şirkətimiz və məhsullarımız haqqında ətraflı məlumat əldə etmək
+              üçün kataloqumuzu yükləyə bilərsiniz.
+            </p>
+            <button type="">Kataloqu yüklə</button>
+          </div>
+          <div className="col-lg-9 col-sm-6 col-12 p-0">
+            <img className="w-100" src="/static/img5.jpg" alt="" />
+          </div>
+        </div>
+      </section>
     </>
   );
 }
