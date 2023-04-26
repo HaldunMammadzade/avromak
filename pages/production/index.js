@@ -67,7 +67,7 @@ const Production = () => {
               <img className="w-100" src="/static/img2.jpg" alt="" />
               <p>Ət məhsulları</p>
               <a
-                href=""
+                href="/meat"
                 className="d-flex justify-content-between border-b mt-3 py-2"
               >
                 Rosko
@@ -78,7 +78,7 @@ const Production = () => {
                 />
               </a>
               <a
-                href=""
+                href="/meat"
                 className="d-flex justify-content-between border-b mt-3 py-2"
               >
                 Ustdad
@@ -89,7 +89,7 @@ const Production = () => {
                 />
               </a>
               <a
-                href=""
+                href="/meat"
                 className="d-flex justify-content-between border-b mt-3 py-2"
               >
                 Dadim
@@ -104,7 +104,7 @@ const Production = () => {
               <img className="w-100" src="/static/img3.png" alt="" />
               <p>Makaron</p>
               <a
-                href=""
+                href="/favelli"
                 className="d-flex justify-content-between border-b mt-3 py-2"
               >
                 Favelli
@@ -115,7 +115,7 @@ const Production = () => {
                 />
               </a>
               <a
-                href=""
+                href="/rizzi"
                 className="d-flex justify-content-between border-b mt-3 py-2"
               >
                 Makara
@@ -126,7 +126,7 @@ const Production = () => {
                 />
               </a>
               <a
-                href=""
+                href="/butterfly"
                 className="d-flex justify-content-between border-b mt-3 py-2"
               >
                 Kelebek
@@ -152,7 +152,7 @@ const Production = () => {
               <img className="w-100" src="/static/img4.png" alt="" />
               <p>Un məhsulları</p>
               <a
-                href=""
+                href="/flour"
                 className="d-flex justify-content-between border-b mt-3 py-2"
               >
                 Favelli Un
