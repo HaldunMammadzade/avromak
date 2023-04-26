@@ -314,7 +314,7 @@ export default function Home() {
             <img className="w-100" src="/static/img2.jpg" alt="" />
             <p>Ət məhsulları</p>
             <a
-              href=""
+              href="/meat"
               className="d-flex justify-content-between border-b mt-3 py-2"
             >
               Rosko
@@ -325,7 +325,7 @@ export default function Home() {
               />
             </a>
             <a
-              href=""
+              href="/meat"
               className="d-flex justify-content-between border-b mt-3 py-2"
             >
               Ustdad
@@ -336,7 +336,7 @@ export default function Home() {
               />
             </a>
             <a
-              href=""
+              href="/meat"
               className="d-flex justify-content-between border-b mt-3 py-2"
             >
               Dadim
@@ -351,7 +351,7 @@ export default function Home() {
             <img className="w-100" src="/static/img3.png" alt="" />
             <p>Makaron</p>
             <a
-              href=""
+              href="/favelli"
               className="d-flex justify-content-between border-b mt-3 py-2"
             >
               Favelli
@@ -362,7 +362,7 @@ export default function Home() {
               />
             </a>
             <a
-              href=""
+              href="/makara"
               className="d-flex justify-content-between border-b mt-3 py-2"
             >
               Makara
@@ -373,7 +373,7 @@ export default function Home() {
               />
             </a>
             <a
-              href=""
+              href="butterfly"
               className="d-flex justify-content-between border-b mt-3 py-2"
             >
               Kelebek
@@ -384,7 +384,7 @@ export default function Home() {
               />
             </a>
             <a
-              href=""
+              href="/rizzi"
               className="d-flex justify-content-between border-b mt-3 py-2"
             >
               Rizzi
@@ -399,7 +399,7 @@ export default function Home() {
             <img className="w-100" src="/static/img4.png" alt="" />
             <p>Un məhsulları</p>
             <a
-              href=""
+              href="/flour"
               className="d-flex justify-content-between border-b mt-3 py-2"
             >
               Favelli Un

@@ -83,14 +83,14 @@ const Header = (props) => {
           </ul>
         </div> */}
 
-        {/* <Langs/> */}
+        <Langs/>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label className="menu-icon" for="menu-btn">
           <span class="navicon"></span>
         </label>
         
         <div className="menu align-items-center  position-relative">
-          <ul className="p-0 nav-links my-lg-0 my-5">
+          <ul className="p-0 nav-links my-lg-0 my-5 animated fadeInRightBig">
             <li>
               <a href="/about-us" className="d-flex align-items-baseline">
               Haqqımızda
@@ -102,11 +102,11 @@ const Header = (props) => {
               <img className="ml-4" src="/static/header-arrow.svg" alt=""/></a>
             </li>
             <li>
-              <a href="/projects" className="d-flex align-items-baseline">Retail
+              <a href="/retail" className="d-flex align-items-baseline">Retail
               <img className="ml-4" src="/static/header-arrow.svg" alt=""/></a>
             </li>
             <li>
-              <a href="/sustainability" className="d-flex align-items-baseline">İxrac <img className="ml-4" src="/static/header-arrow.svg" alt=""/> </a>
+              <a href="/export" className="d-flex align-items-baseline">İxrac <img className="ml-4" src="/static/header-arrow.svg" alt=""/> </a>
             </li>
             <li>
               <a href="/contact" className="d-flex align-items-baseline">{t("contact")} <img className="ml-4" src="/static/header-arrow.svg" alt=""/></a>
