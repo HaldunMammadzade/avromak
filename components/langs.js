@@ -29,13 +29,13 @@ const Langs = () => {
               }}
               className={
                 language == "az"
-                  ? "color-black  px-5 cursor"
-                  : " px-5 cursor"
+                  ? "color-black  px-2 cursor"
+                  : " px-2 cursor"
               }
             >
               
               <input
-                class="form-check-input"
+                className="mr-2"
                 type="radio"
                 name="flexRadioDefault"
                 id="flexRadioDefault2"
@@ -44,7 +44,7 @@ const Langs = () => {
                     changeLang("az");
                   }}
               />
-              <label class="form-check-label" for="flexRadioDefault2">
+              <label className="form-check-label" for="flexRadioDefault2">
               AZ
               </label>
             </li>
@@ -52,12 +52,12 @@ const Langs = () => {
               
               className={
                 language == "en"
-                  ? "color-black  px-5 cursor"
-                  : " px-5 cursor"
+                  ? "color-black  px-2 cursor"
+                  : " px-2 cursor"
               }
             >
               <input
-                class="form-check-input"
+                className="mr-2"
                 type="radio"
                 name="flexRadioDefault"
                 id="flexRadioDefault2"
@@ -65,18 +65,18 @@ const Langs = () => {
                     changeLang("en");
                   }}
               />
-              <label class="form-check-label" for="flexRadioDefault2">
+              <label className="form-check-label" for="flexRadioDefault2">
               EN
               </label>
             </li>
             <li
               
               className={
-                language == "ru" ? "color-black  px-5 cursor" : " px-5 cursor"
+                language == "ru" ? "color-black  px-2 cursor d-flex aling-items-center" : " px-2 cursor d-flex aling-items-center"
               }
             >
               <input
-                class="form-check-input"
+                className="mr-2"
                 type="radio"
                 name="flexRadioDefault"
                 id="flexRadioDefault2"
@@ -84,7 +84,7 @@ const Langs = () => {
                     changeLang("ru");
                   }}
               />
-              <label class="form-check-label" for="flexRadioDefault2">
+              <label className="form-check-label" for="flexRadioDefault2">
               RU
               </label>
             </li>

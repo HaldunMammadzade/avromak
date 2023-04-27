@@ -17,7 +17,7 @@ body {
     opacity: 0;
     + .radio-label {
       &:before {
-        content: '';
+        content: "";
         background: block;
         border-radius: 100%;
         border: 1px solid darken(black, 25%);
@@ -26,7 +26,7 @@ body {
         height: 1.4em;
         position: relative;
         top: -0.2em;
-        margin-right: 1em; 
+        margin-right: 1em;
         vertical-align: top;
         cursor: pointer;
         text-align: center;
@@ -139,10 +139,10 @@ h1 {
   }
   .branch-content {
     font-weight: 400;
-font-size: 20px;
-line-height: 23px;
+    font-size: 20px;
+    line-height: 23px;
 
-color: #131313;
+    color: #131313;
   }
 }
 
@@ -397,6 +397,10 @@ color: #131313;
     padding: 80px 0;
     height: 600px;
     object-fit: contain;
+    &:hover {
+      transform: scale(1.1);
+      transition: .3s all;
+    }
   }
   p {
     font-weight: 500;
@@ -438,7 +442,7 @@ color: #131313;
       font-size: 16px !important;
       line-height: 140% !important;
       /* or 22px */
-  
+
       color: #f8f8ef !important;
     }
     button {
@@ -448,14 +452,29 @@ color: #131313;
       padding: 10px 25px;
 
       font-weight: 500;
-font-size: 16px;
-line-height: 19px;
-/* identical to box height */
+      font-size: 16px;
+      line-height: 19px;
+      /* identical to box height */
 
-
-color: #131313;
+      color: #131313;
     }
   }
+}
+
+.export {
+  h2 {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 41px;
+    margin-right: 19rem;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-right: 16rem;
+  }
+  color: #131313;
 }
 
 // button {
@@ -926,7 +945,7 @@ color: #131313;
       text-decoration: none;
       font-weight: 400;
       font-size: 64px;
-      line-height: 75px;
+      // line-height: 75px;
       color: #131313;
       // text-transform: uppercase;
       &:hover {
@@ -941,6 +960,11 @@ color: #131313;
     clear: both;
     max-height: 0;
     transition: max-height 0.2s ease-out;
+  }
+  .lang-link {
+    position: absolute;
+    right: 150px;
+    top: 35px;
   }
 
   .lang-link li {

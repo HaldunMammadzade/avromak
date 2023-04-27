@@ -39,9 +39,11 @@ const Header = (props) => {
           props.isWhite ? "white" : ""
         } ${scroll ? "active" : ""}  `}
       >
-        <Link type="button" href="/" className="cursor-pointer">
+        <a type="button" href="/" className="cursor-pointer">
+          <div>
           <img className="cursor" src="/static/logo.png" alt="" />
-        </Link>
+          </div>
+        </a>
         {/* <div>
           <ul className="d-flex align-items-center lang-link p-0 langs-mobile my-lg-0 my-3">
             <li

@@ -107,7 +107,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="d-flex justify-content-between info mt-sm-5 mt-3 footer-border pb-4">
+        <div className="d-flex justify-content-between info mt-sm-5 mt-3 pt-sm-4 pt-0 footer-border pb-4">
           <div className="d-flex align-items-center">
             <span className="mr-2">Ünvan:</span>
             <p className="m-0">Ziya Bünyadov pr. 13, <br/>
