@@ -23,41 +23,33 @@ const Rizzi = () => {
             </div>
             <div className="col-md-8 col-sm-6 col-12 border-r p-0">
               <div className="p-5 border-b">
-                <p>Tərkibi:</p>
-                <span>
-                Bərk buğda növündən hazırlanmış un və su. Tərkibində konservant,
-rəngləyici və digər qida əlavələri yoxdur.
-                </span>
+                <p>{t("favelli1")}:</p>
+                <span>{t("butterFly1")}</span>
               </div>
 
               <div className="p-5 border-b">
-                <p>Saxlanılma şəraiti:</p>
-                <span>
-                30°C-dən çox olmayan temperaturda, havanın nisbi rütubəti 75%-dən
-çox olmayan, təmiz və quru yerdə saxlanılmalıdır. Kənar qoxulu və
-ziyanvericilərlə yoluxmuş mühitdən qoruyun.
-
-                </span>
+                <p>{t("favelli3")}:</p>
+                <span>{t("butterFly1")}</span>
               </div>
 
               <div className="p-5 border-b">
-                <p>Saxlama müddəti:</p>
-                <span>24 ay</span>
+                <p>{t("favelli5")}:</p>
+                <span>{t("butterFly1")}</span>
               </div>
 
               <div className="p-5">
-                <p>100 qr məhsulun qida və enerji dəyərləri:</p>
-                <span><strong>Yağlar:</strong>1.3</span><br/>
-                <span><strong>Zülallar:</strong>10.7</span><br/>
-                <span><strong>Karbohidratlar:</strong>68.4</span><br/>
-                <span><strong>Enerji dəyəri (KKAL):</strong>328.1</span>
+                <p>{t("favelli7")}:</p>
+                <span><strong>{t("favelli8")}:</strong>1.3</span><br/>
+                <span><strong>{t("favelli9")}:</strong>10.7</span><br/>
+                <span><strong>{t("favelli10")}:</strong>68.4</span><br/>
+                <span><strong>{t("favelli11")}:</strong>328.1</span>
               </div>
             </div>
           </div>
         </section>
 
         <section className="favelli ">
-          <h2>Pasta di Rizzi məhsulları</h2>
+          <h2>Pasta di Rizzi {t("Products")}</h2>
           <div className=" row">
             <div className="col-md-4 col-sm-6 col-12  p-0 border-r border-t border-b">
               <img className="px-4 w-100" src="/static/rizzi2.png" alt="" />

@@ -23,41 +23,33 @@ const Favelli = () => {
             </div>
             <div className="col-md-8 col-sm-6 col-12 border-r p-0">
               <div className="p-5 border-b">
-                <p>Tərkibi:</p>
-                <span>
-                Bərk buğda növündən hazırlanmış un və su. Tərkibində konservant,
-rəngləyici və digər qida əlavələri yoxdur.
-                </span>
+                <p>{t("favelli1")}:</p>
+                <span>{t("favelli2")}</span>
               </div>
 
               <div className="p-5 border-b">
-                <p>Saxlanılma şəraiti:</p>
-                <span>
-                30°C-dən çox olmayan temperaturda, havanın nisbi rütubəti 75%-dən
-çox olmayan, təmiz və quru yerdə saxlanılmalıdır. Kənar qoxulu və
-ziyanvericilərlə yoluxmuş mühitdən qoruyun.
-
-                </span>
+                <p>{t("favelli3")}:</p>
+                <span>{t("favelli4")}</span>
               </div>
 
               <div className="p-5 border-b">
-                <p>Saxlama müddəti:</p>
-                <span>24 ay</span>
+                <p>{t("favelli5")}:</p>
+                <span>{t("favelli6")}</span>
               </div>
 
               <div className="p-5">
-                <p>100 qr məhsulun qida və enerji dəyərləri:</p>
-                <span><strong>Yağlar:</strong>0.8</span><br/>
-                <span><strong>Zülallar:</strong>12.0</span><br/>
-                <span><strong>Karbohidratlar:</strong>68.5</span><br/>
-                <span><strong>Enerji dəyəri (KKAL):</strong>321.2</span>
+                <p>{t("favelli7")}:</p>
+                <span><strong>{t("favelli8")}:</strong> 0.8</span><br/>
+                <span><strong>{t("favelli9")}:</strong> 12.0</span><br/>
+                <span><strong>{t("favelli10")}:</strong> 68.5</span><br/>
+                <span><strong>{t("favelli11")}:</strong> 321.2</span>
               </div>
             </div>
           </div>
         </section>
 
         <section className="favelli ">
-          <h2>Favelli məhsulları</h2>
+          <h2>Favelli {t("Products")}</h2>
           <div className=" row">
             <div className="col-md-4 col-sm-6 col-12  p-0 border-r border-t border-b">
               <img className="px-4 w-100" src="/static/favelli4.png" alt="" />

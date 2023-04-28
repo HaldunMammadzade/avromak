@@ -11,125 +11,73 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>Haqqımızda</title>
+        <title>{t("aboutTitle")}</title>
       </Head>
 
       <div className="container-fluid">
         <section className="production animated fadeInRightBig">
-          <h2 className="border-b pb-4">
-            Ağcabədi və Biləsuvar`daki 12000 hektar şəxsi ərazidən gələn Premium
-            birinci sinif buğdalar Bakı`daki fabrikamızda işlənərək
-            müştərilərimizə çatdırılır.
-          </h2>
-          <div className="text-right">
-            <img
-              className="pt-4"
-              src="/static/about1.jpg"
-              alt=""
-            />
-            <p>
-              “Avromak” MMC 2019-cu ildə Azərbaycanda, Bakı şəhərində fəaliyyətə
-              başlamışdır. Şirkətin fəaliyyəti, öz istehsal sahələrinin,
-              həmçinin distribüterlik etdiyi şirkətlərin məhsullarının satışını
-              təmin etməyə əsaslanır. Şirkət öz işçi qüvvəsi və nəqliyyat
-              vasitələri ilə məhsulları Azərbaycanın istənilən bölgəsinə
-              çatdırmaqdadır.
-            </p>
-            <p>
-              “Avromak” MMC-nin əsas məqsədi istehsal və distribüterlik etdiyi
-              məhsulların çeşidlərinin və keyfiyyətinin optimallaşdırılmasıdır
-              və bu istiqamətdə daimi çalışır. “Avromak” MMC Bakıda yerləşən baş
-              ofis, anbarlar, dəyirman, istehsal sahələri və regional
-              filiallardan ibarətdir. Şirkət dünyanın müxtəlif ölkələri ilə
-              əməkdaşlıq edir və bu əməkdaşlıqları genişləndirməkdədir.
-            </p>
+          <h2 className="border-b pb-4">{t("aboutDesc")}</h2>
+          <div className="row">
+            <div className="col-lg-4 col-12"></div>
+
+            <div className="col-lg-8 col-12">
+              <img className="pt-4 w-100" src="/static/about1.jpg" alt="" />
+              <p className="w-100 pr-5 mt-lg-5 mt-3">{t("aboutDesc1")}</p>
+              <p className="w-100 pr-5">{t("aboutDesc2")}</p>
+            </div>
           </div>
         </section>
 
         <section className="export overflow-hidden mt-5">
-          <div className="row border-t border-b ">
-            <div className="col-md-5 col-12 border-r border-b py-4">
-              <h2>Export haqqında</h2>
+          <div className="row border-t border-b export-1">
+            <div className="col-md-4 col-12 py-4">
+              <h2>{t("vision")}</h2>
+
+              <p className="mr-0">{t("visionText1")}</p>
+              <br />
+              <p className="mr-0">{t("visionText2")}</p>
             </div>
 
-            <div className="col-md-7 col-12 py-4 border-b">
-              <p>
-                Avromak MMC Azərbaycan`ın qabaqcıl makaron,un və ət məhsulları
-                istehsalı və ixracı eləyən şirkətlərindən biridir. Avromak
-                yarandığı gündən keyfiyyət, məhsul və vaxtında çatdırılma
-                prinsipləri sayəsində həm yərli həm də xarici miqyasda nüfuzunu
-                qazanmışdır. Şirkətimiz istehsal etdiyi məhsulun 90%-ni öz
-                brendləri olan Favelli, Kələbək və Makara ilə ixrac bazarlarında
-                satır. Güclü, gənc və dinamik ixracat komandası dünyanın bir çox
-                sərgi və tədbirlərində iştirak edərək Avromak markalarının
-                məqsəd və hədəflərinə uyğun olaraq fəaliyyətini davam etdirir.
-              </p>
-
-              <p>
-                Avromak-ın ixrac etdiyi ölkələr arasında İordaniya, İran, İraq,
-                BƏƏ, Suriya, Nigeriya, Liviya, İndoneziya, Malayziya, Tayland,
-                Koreya və Gürcüstan var. Şirkət gələcəkdə ixrac şəbəkəsini
-                təkmilləşdirmək üçün işlərini davam etdirir. Avromak,
-                müştəriləri qarşısında götürdüyü öhdəlikləri hər zaman tam və
-                vaxtında yerinə yetirəcəyini öhdəsinə götürür.
-              </p>
-            </div>
-
-            <div className="col-md-5 col-12 border-r py-4">
-              <img className="w-100" src="/static/export2.jpg" alt="" />
-            </div>
-
-            <div className="col-md-7 col-12 py-4 px-5">
-              <h2>Export form</h2>
-
-              <div className="form mt-4">
-                <form className="row justify-content-between">
-                  <input
-                    className="col-md-6 col-12"
-                    type="tel"
-                    name=""
-                    value=""
-                    placeholder="Ad"
-                  />
-                  <input
-                    className="col-md-6 col-12"
-                    type="text"
-                    name=""
-                    value=""
-                    placeholder="Soyad"
-                  />
-                  <input
-                    className="col-md-6 col-12"
-                    type="mail"
-                    name=""
-                    value=""
-                    placeholder="Email "
-                  />
-                  <input
-                    className="col-md-6 col-12"
-                    type="text"
-                    name=""
-                    value=""
-                    placeholder="Ölkə"
-                  />
-                  <input
-                    className="col-md-6 col-12"
-                    type="text"
-                    name=""
-                    value=""
-                    placeholder="Brand"
-                  />
-                  <input
-                    className="col-md-6 col-12"
-                    type="text"
-                    name=""
-                    value=""
-                    placeholder="Qablaşdırma"
-                  />
-                </form>
-              </div>
+            <div className="col-md-8 col-12 py-4 ">
+              <img className="w-100" src="/static/about2.jpg" alt="" />
             </div>
           </div>
+
+          <div className="row border-b ">
+            <div className="col-md-8 col-12 py-4">
+              <img className="w-100" src="/static/about3.jpg" alt="" />
+            </div>
+
+            <div className="col-md-4 col-12  py-4">
+              <h2>{t("mission")}</h2>
+
+              <p className="mr-0">{t("missionText1")}</p>
+              <br />
+              <p className="mr-0">{t("missionText1")}</p>
+            </div>
+          </div>
+
+          <div className="row  border-b export-1">
+            <div className="col-md-4 col-12 py-4">
+              <h2>{t("goal")}</h2>
+
+              <p className="mr-0">{t("goalText1")}</p>
+              <br />
+              <p className="mr-0">{t("goalText2")}</p>
+            </div>
+
+            <div className="col-md-8 col-12 py-4 ">
+              <img className="w-100" src="/static/about4.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section className="production animated fadeInRightBig pb-4 mb-5 border-b">
+          <h2 className="my-5">{t("aboutText")}</h2>
+          
+          <img className="w-100" src="/static/about5.jpg" alt="" />
+
+          <p className="mt-lg-5 mt-3 ">{t("aboutText2")}</p>
         </section>
       </div>
     </>

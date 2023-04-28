@@ -1,69 +1,86 @@
 import React from "react";
-import Head from 'next/head'
-import useTranslation from 'next-translate/useTranslation';
-import i18nConfig from '../../i18n.json'
-const { locales } = i18nConfig
+import Head from "next/head";
+import useTranslation from "next-translate/useTranslation";
+import i18nConfig from "../../i18n.json";
+const { locales } = i18nConfig;
 const Contact = () => {
-    const { t, lang } = useTranslation('common');
-    return (
+  const { t, lang } = useTranslation("common");
+  return (
+    <>
+      <Head>
+        <title>{t("contactUs")}</title>
+      </Head>
 
-        <>
-            <Head>
-                <title>{t('contactUs')}</title>
-            </Head>
+      <div className="container-fluid">
+        <section className="contact ">
+          <h2 className="">{t("contactUs")}</h2>
+          <div className="row">
+            <div className="col-lg-6 col-12">
+              <div className="form mt-4">
+                <form action="">
+                  <div className="mb-sm-4 mb-2 inputs">
+                    <label>{t("contact1")}</label>
+                    <input
+                      className="mr-sm-5 p-2"
+                      type="text"
+                      name="name"
+                    />
+                  </div>
 
-            <section className="container-fluid px-md-2 px-0">
-                <div className="row contact">
-                    <div className="col-lg-7 col-12  p-0 d-lg-none">
-                        <h1 className="mb-5 mt-4 ml-3 ">{t('contactUs')}</h1>
+                  <div className="mb-sm-4 mb-2 inputs">
+                    <label>{t("contact2")} </label>
+                    <input
+                      className="mr-sm-5  p-2"
+                      type="mail"
+                      name="name"
+                    />
+                  </div>
 
-                        <div className="d-flex justify-content-between border-t contact-info pl-3 pt-4 pb-5">
-                            <span>{t('mail')}</span>
-                            <address>sales@5aconstruction.co</address>
-                        </div>
-                        <div className="d-flex justify-content-between border-t contact-info-number pl-3 pt-4 pb-5">
-                            <span>{t('number')}</span>
-                            <address>+99455/703130011</address>
-                        </div>
-                        <div className="d-flex justify-content-between border-t contact-info pl-4 pt-3 pb-5">
-                            <span>{t('addressText')}</span>
-                            <address>{t('address1')}
-                                <br />
-                                {t('address2')}
-                                <br />
-                                {t('address3')}</address>
-                        </div>
-                    </div>
-                    <div className="col-lg-5 col-12 p-0">
-                        <img className='w-100 py-lg-4 animated fadeInLeft' src="/static/contact.jpg" alt="" />
-                    </div>
-                    <div className="col-lg-7 col-12 border-l p-0 d-lg-block d-none">
-                        <h1 className="mb-5 mt-4 ml-3">{t('contactUs')}</h1>
+                  <div className="mb-sm-4 mb-2 inputs">
+                    <label>{t("contact3")}</label>
+                    <textarea
+                      className="mr-sm-5 p-2"
+                      type="text"
+                      name="name"
+                    />
+                  </div>
+                </form>
+                <button type="submit" className="mt-sm-3 ">
+                {t("send")}
+                </button>
+              </div>
+            </div>
+            <div className="col-lg-4 col-12 mt-sm-0 mt-5">
+              <div className="d-flex justify-content-between align-items-center mb-sm-4 mb-2">
+                <p className="mb-0">{t("contact4")}</p>
+                <span className="border-b pb-3">
+                {t("contact6")}
+                  <br /> {t("contact7")}
+                </span>
+              </div>
 
-                        <div className="d-flex justify-content-between border-t contact-info pl-3 pt-4 pb-5">
-                            <span>{t('mail')}</span>
-                            <address>sales@5aconstruction.co</address>
-                        </div>
-                        <div className="d-flex justify-content-between border-t contact-info-number pl-3 pt-4 pb-5">
-                            <span>{t('number')}</span>
-                            <address>+99455/703130011</address>
-                        </div>
-                        <div className="d-flex justify-content-between border-t contact-info pl-4 pt-3 pb-5">
-                            <span>{t('addressText')}</span>
-                            <address>{t('address1')}
-                                <br />
-                                {t('address2')}
-                                <br />
-                                {t('address3')}</address>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </>
-    )
-}
+              <div className="d-flex justify-content-between align-items-center mb-sm-4 mb-2">
+                <p className="mb-0"> {t("contact5")}</p>
+                <span className="border-b pb-3">
+                  +994 55 226 68 88 <br /> +994 12 310 11 16 <br /> +994 55 510
+                  24 21
+                </span>
+              </div>
 
+              <div className="d-flex justify-content-between align-items-center mb-sm-4 mb-2">
+                <p className="mb-0"> {t("contact2")}</p>
+                <span className="border-b pb-3">
+                  info@avromak.az
+                  <br />
+                  export@avromak.az
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </>
+  );
+};
 
-
-
-export default Contact
+export default Contact;
