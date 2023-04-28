@@ -43,18 +43,18 @@ const Production = () => {
 
         <section className="statics ">
           <div className="row justify-content-between align-items-center border-b pb-2">
-            <div className="col-lg-6 col-12">
+            <div className="col-lg-6 col-12 pr-0">
               <p className="m-0">12000 ha</p>
             </div>
-            <div className="col-lg-6 col-12">
+            <div className="col-lg-6 col-12 pl-0">
               <p className="m-0">2500 m²</p>
             </div>
           </div>
           <div className="row justify-content-between align-items-center border-b pt-2 pb-2">
-            <div className="col-lg-6 col-12">
+            <div className="col-lg-6 col-12 pr-0">
               <span>ƏKİN SAHƏSİ</span>
             </div>
-            <div className="col-lg-6 col-12">
+            <div className="col-lg-6 col-12 pl-0">
               <span>İSTEHSAL SAHƏSİ</span>
             </div>
           </div>
@@ -63,7 +63,7 @@ const Production = () => {
         <section className="mb-5 main-products">
           <h2>{t("products")}</h2>
           <div className="row">
-            <div className="col-lg-4 col-sm-6 col-12 position-relative">
+            <div className="col-lg-4 col-sm-6 col-12 position-relative ">
               <img className="w-100" src="/static/img2.jpg" alt="" />
               <p>Ət məhsulları</p>
               <a
@@ -137,7 +137,7 @@ const Production = () => {
                 />
               </a>
               <a
-                href=""
+                href="/rizzi"
                 className="d-flex justify-content-between border-b mt-3 py-2"
               >
                 Rizzi
@@ -174,6 +174,7 @@ const Production = () => {
                 
                 src="/static/label1.png"
                 alt=""
+                className="w-100"
               />
             </div>
             <div className="col-lg-5 col-sm-6 col-12 p-0">
@@ -181,6 +182,7 @@ const Production = () => {
                 
                 src="/static/label2.png"
                 alt=""
+                className="w-100"
               />
             </div>
             <div className="col-lg-4 col-sm-6 col-12 p-0">
@@ -188,6 +190,7 @@ const Production = () => {
                
                 src="/static/label3.png"
                 alt=""
+                className="w-100"
               />
             </div>
           </div>

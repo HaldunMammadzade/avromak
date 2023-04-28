@@ -79,28 +79,28 @@ const Footer = () => {
             <a href="/production" className="mr-sm-4 mr-2">
             İstehsalat
             </a>
-            <a href="/about-us" className="mr-sm-4 mr-2">
+            <a href="/retail" className="mr-sm-4 mr-2">
             Retail
             </a>
-            <a href="/about-us" className="mr-sm-4 mr-2">
+            <a href="/export" className="mr-sm-4 mr-2">
             İxrac  
             </a>
             <a href="/contact">Əlaqə</a>
           </div>
           <div className="d-flex">
-            <a href="/about-us" className="mr-sm-4 mr-2 d-flex">
+            <a target="_blank" href="https://www.instagram.com/avromak_mmc/" className="mr-sm-4 mr-2 d-flex">
               Instagram
               <img className="ml-1" src="/static/arrow-footer.png" alt="" />
             </a>
-            <a href="/about-us" className="mr-sm-4 mr-2 d-flex">
+            <a  target="_blank" href="https://www.facebook.com/avromak/" className="mr-sm-4 mr-2 d-flex">
               Facebook
               <img className="ml-1" src="/static/arrow-footer.png" alt="" />
             </a>
-            <a href="/about-us" className="mr-sm-4 mr-2 d-flex">
+            <a target="_blank" href="https://www.facebook.com/avromak/" className="mr-sm-4 mr-2 d-flex">
               Twitter
               <img className="ml-1" src="/static/arrow-footer.png" alt="" />
             </a>
-            <a href="/about-us" className="d-flex">
+            <a target="_blank" href="https://www.facebook.com/avromak/" className="d-flex">
               Linkedin
               <img className="ml-1" src="/static/arrow-footer.png" alt="" />
             </a>

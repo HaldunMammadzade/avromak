@@ -36,54 +36,15 @@ const Header = (props) => {
     <>
       <header
         className={`header  justify-content-between align-items-center  ${
-          props.isWhite ? "white" : ""
-        } ${scroll ? "active" : ""}  `}
+          props.isWhite ? "white " : ""
+        } ${scroll ? "active " : " "}  `}
       >
         <a type="button" href="/" className="cursor-pointer">
           <div>
           <img className="cursor" src="/static/logo.png" alt="" />
           </div>
         </a>
-        {/* <div>
-          <ul className="d-flex align-items-center lang-link p-0 langs-mobile my-lg-0 my-3">
-            <li
-              onClick={() => {
-                changeLang("az");
-              }}
-              className={
-                language == "az"
-                  ? "color-black border-r pr-3 cursor"
-                  : "border-r pr-3 cursor"
-              }
-            >
-              AZ
-            </li>
-            <li
-              onClick={() => {
-                changeLang("en");
-              }}
-              className={
-                language == "en"
-                  ? "color-black border-r px-3 cursor"
-                  : "border-r px-3 cursor"
-              }
-            >
-              EN
-            </li>
-            <li
-              onClick={() => {
-                changeLang("ru");
-              }}
-              className={
-                language == "ru"
-                  ? "color-black border-r px-3 cursor"
-                  : "border-r px-3 cursor"
-              }
-            >
-              RU
-            </li>
-          </ul>
-        </div> */}
+        
 
         <Langs/>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
@@ -115,31 +76,6 @@ const Header = (props) => {
             </li>
           </ul>
 
-          
-
-          {/* <div className=" d-lg-none d-flex align-items-center justify-content-between mobile-socials mb-0 mt-5">
-            <a
-              className="my-lg-0 my-5 "
-              href="https://www.facebook.com/5aConstructionn?mibextid=LQQJ4d"
-              target="_blank"
-            >
-              FACEBOOK
-            </a>
-            <a
-              className="my-lg-0 my-5 "
-              href="https://instagram.com/5a_construction?igshid=YmMyMTA2M2Y="
-              target="_blank"
-            >
-              INSTAGRAM
-            </a>
-            <a
-              className="my-lg-0 my-5 "
-              href="https://www.linkedin.com/company/5a-construction/"
-              target="_blank"
-            >
-              LINKEDIN
-            </a>
-          </div> */}
         </div>
       </header>
     </>

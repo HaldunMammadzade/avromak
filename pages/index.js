@@ -57,7 +57,7 @@ export default function Home() {
             </div>
             <div>
               <a href="/production">
-                <img className="main-arrow" src="/static/arrow.svg" alt="" />
+                <img className="main-arrow " src="/static/arrow.svg" alt="" />
               </a>
             </div>
           </div>
@@ -89,13 +89,13 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="about-cover mb-5 d-lg-block d-none">
-          <img className="main-arrow" src="/static/home-main.jpg" alt="" />
+        <div className="about-cover mb-5 ">
+          <img className="main-arrow w-100" src="/static/home-main.jpg" alt="" />
         </div>
         <div className="container-fluid mt-sm-5 mt-2 ">
           <div className="row section-content align-items-end">
             <div className="col-md-6 col-12">
-              <img className="main-img" src="/static/img1.jpg" alt="" />
+              <img className="main-img w-100" src="/static/img1.jpg" alt="" />
             </div>
             <div className="col-md-6 col-12 ">
               <div>
@@ -110,9 +110,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="about-cover my-5 d-lg-none d-block">
+        {/* <div className="about-cover my-5 d-lg-none d-block">
           <img className="main-img" src="/static/about-cover.jpg" alt="" />
-        </div>
+        </div> */}
       </section>
 
       {/* <section className="statistics border-t border-b">

@@ -62,12 +62,13 @@ const Export = () => {
 
               <div className="form mt-4">
                 <form className="row justify-content-between" >
-                    <input className="col-md-6 col-12"  type="tel" name="" value="" placeholder="Ad"/>
-                    <input className="col-md-6 col-12"  type="text" name="" value="" placeholder="Soyad"/>
-                    <input className="col-md-6 col-12"  type="mail" name="" value="" placeholder="Email "/>
-                    <input className="col-md-6 col-12"  type="text" name="" value="" placeholder="Ölkə"/>
-                    <input className="col-md-6 col-12"  type="text" name="" value="" placeholder="Brand"/>
-                    <input className="col-md-6 col-12" type="text" name="" value="" placeholder="Qablaşdırma"/>
+                    <input className="col-md-5 col-12 mt-4"  type="tel" name="tel" value="" placeholder="Ad"/>
+                    <input className="col-md-5 col-12 mt-4"  type="text" name="" value="" placeholder="Soyad"/>
+                    <input className="col-md-5 col-12 mt-4"  type="mail" name="" value="" placeholder="Email "/>
+                    <input className="col-md-5 col-12 mt-4"  type="text" name="" value="" placeholder="Ölkə"/>
+                    <input className="col-md-5 col-12 mt-4"  type="text" name="" value="" placeholder="Brand"/>
+                    <input className="col-md-5 col-12 mt-4" type="text" name="" value="" placeholder="Qablaşdırma"/>
+                    <textarea className="col-md-6 col-12 mt-4" placeholder="Mesajınız"></textarea>
                 </form>
               </div>
             </div>
