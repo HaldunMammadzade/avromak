@@ -24,17 +24,17 @@ const ButterFly = () => {
             <div className="col-md-8 col-sm-6 col-12 border-r p-0">
               <div className="p-5 border-b">
                 <p>{t("favelli1")}:</p>
-                <span>{t("butterFly3")}</span>
+                <span>{t("butterfly1")}</span>
               </div>
 
               <div className="p-5 border-b">
                 <p>{t("favelli3")}:</p>
-                <span>{t("butterFly3")}</span>
+                <span>{t("butterfly2")}</span>
               </div>
 
               <div className="p-5 border-b">
                 <p>{t("favelli5")}:</p>
-                <span>{t("butterFly3")}</span>
+                <span>{t("butterfly3")}</span>
               </div>
 
               <div className="p-5">
@@ -48,7 +48,7 @@ const ButterFly = () => {
           </div>
         </section>
 
-        <section className="favelli ">
+        <section className="favelli mb-5">
           <h2>Kelebek {t("Products")}</h2>
           <div className=" row">
             <div className="col-md-4 col-sm-6 col-12  p-0 border-r border-t border-b">

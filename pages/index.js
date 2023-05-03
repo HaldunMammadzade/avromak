@@ -9,6 +9,7 @@ const { locales } = i18nConfig;
 export default function Home() {
   const { t, lang } = useTranslation("common");
   const pageslider = React.createRef();
+  const mainslider = React.createRef();
   const settings = {
     dots: false,
     infinite: true,
@@ -42,6 +43,20 @@ export default function Home() {
       
     ],
   };
+
+  const settings2 = {
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    speed: 1500,
+    autoplaySpeed: 1500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
+  const next = () => {
+    mainslider.current.slickNext();
+}
   return (
     <>
       <Head>
@@ -54,9 +69,7 @@ export default function Home() {
               <h1>{t("homeTitle")}</h1>
             </div>
             <div>
-              <a href="/about-us">
-                <img className="main-arrow " src="/static/arrow.svg" alt="" />
-              </a>
+            <img onClick={()=>{next()}}  className="main-arrow " src="/static/arrow.svg" alt="" />
             </div>
           </div>
         </div>
@@ -88,7 +101,19 @@ export default function Home() {
 
       <section>
         <div className="about-cover mb-5 ">
+        <Slider
+          className="align-items-center w-100"
+          ref={(slider1) => (mainslider.current = slider1)}
+          {...settings2}
+        >
           <img className="main-arrow w-100" src="/static/home-main.jpg" alt="" />
+          <img className="main-arrow w-100" src="/static/slider1.jpg" alt="" />
+          <img className="main-arrow w-100" src="/static/slider2.jpg" alt="" />
+          <img className="main-arrow w-100" src="/static/slider3.jpg" alt="" />
+          <img className="main-arrow w-100" src="/static/slider4.jpg" alt="" />
+          <img className="main-arrow w-100" src="/static/slider5.jpg" alt="" />
+        </Slider>
+          
         </div>
         <div className="container-fluid mt-sm-5 mt-2 ">
           <div className="row section-content align-items-end">
@@ -268,7 +293,7 @@ export default function Home() {
           <div className="col-lg-3 col-sm-6 col-12 border-r py-5 catalog-button">
             <h2>{t("catalog")}</h2>
             <p>{t("catalogText")}</p>
-            <button >{t("download")}</button>
+            <button ><a href="/docs/avromak.pdf" download >{t("download")}</a></button>
           </div>
           <div className="col-lg-9 col-sm-6 col-12 p-0">
             <img className="w-100" src="/static/img5.jpg" alt="" />

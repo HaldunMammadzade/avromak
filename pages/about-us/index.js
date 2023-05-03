@@ -34,7 +34,7 @@ const About = () => {
               <h2>{t("vision")}</h2>
 
               <p className="mr-0">{t("visionText1")}</p>
-              <br />
+              
               <p className="mr-0">{t("visionText2")}</p>
             </div>
 
@@ -52,8 +52,7 @@ const About = () => {
               <h2>{t("mission")}</h2>
 
               <p className="mr-0">{t("missionText1")}</p>
-              <br />
-              <p className="mr-0">{t("missionText1")}</p>
+              <p className="mr-0">{t("missionText2")}</p>
             </div>
           </div>
 
@@ -62,7 +61,6 @@ const About = () => {
               <h2>{t("goal")}</h2>
 
               <p className="mr-0">{t("goalText1")}</p>
-              <br />
               <p className="mr-0">{t("goalText2")}</p>
             </div>
 
@@ -77,7 +75,7 @@ const About = () => {
           
           <img className="w-100" src="/static/about5.jpg" alt="" />
 
-          <p className="mt-lg-5 mt-3 ">{t("aboutText2")}</p>
+          <p className="mt-lg-5 mt-3 ">{t("aboutText1")}</p>
         </section>
       </div>
     </>

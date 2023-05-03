@@ -41,7 +41,7 @@ const Header = (props) => {
       >
         <a type="button" href="/" className="cursor-pointer">
           <div>
-          <img className="cursor" src="/static/logo.png" alt="" />
+          <img style={{background: "#E0E0E0"}} className="cursor" src="/static/logo.png" alt="" />
           </div>
         </a>
         

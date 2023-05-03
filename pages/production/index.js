@@ -21,7 +21,7 @@ const Production = () => {
           <p className="mt-4">{t("prodText1")}</p>
         </section>
 
-        <section className="statics ">
+        <section className="statics mt-md-5 mt-4">
           <div className="row justify-content-between align-items-center static border-b pb-2">
             <div className="col-lg-6 col-12  statics-div">
               <p className="m-0">12000 ha</p>

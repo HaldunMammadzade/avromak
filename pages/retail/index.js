@@ -18,7 +18,7 @@ const Retail = () => {
         <section className="animated fadeInRightBig row align-items-end meats-main">
           <div className="col-sm-4 col-12">
             <h1>{t("retailTitle")}</h1>
-            <p className="m-0">{t("retailText1")}</p>
+            <p className="mb-0 mt-4">{t("retailText1")}</p>
           </div>
 
           <div className="col-sm-8 col-12 pr-0">
@@ -41,7 +41,7 @@ const Retail = () => {
           <div className="col-sm-6 col-12 d-flex flex-column rublevski-content">
             <span>{t("retailText3")}</span>
             <div className="mt-3">
-              <button>{t("download")}</button>
+            <button ><a href="/docs/rublevsky.pdf" download >{t("download")}</a></button>
             </div>
           </div>
         </div>

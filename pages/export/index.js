@@ -20,7 +20,7 @@ const Export = () => {
           <img className="w-100 pt-4" src="/static/export1.jpg" alt="" />
         </section>
 
-        <section className="export overflow-hidden mt-5">
+        <section className="export overflow-hidden mt-5 mb-5">
           <div className="row border-t border-b ">
             <div className="col-md-5 col-12 border-r border-b py-4">
               <h2>{t("exportText1")}</h2>

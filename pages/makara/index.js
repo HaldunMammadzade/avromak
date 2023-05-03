@@ -48,7 +48,7 @@ const Makara = () => {
           </div>
         </section>
 
-        <section className="favelli ">
+        <section className="favelli mb-5">
           <h2>Makara {t("Products")}</h2>
           <div className=" row">
             <div className="col-md-4 col-sm-6 col-12  p-0 border-r border-t border-b">

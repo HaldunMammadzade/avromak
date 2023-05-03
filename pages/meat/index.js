@@ -17,16 +17,8 @@ const Meat = () => {
       <div className="container-fluid">
         <section className="animated fadeInRightBig row align-items-end meats-main">
           <div className="col-lg-4 col-12 mb-lg-0 mb-5">
-            <h1> “AVROMAK MMC” şirkətinin ət məhsulları istehsalatı</h1>
-            <p className="m-0">
-              Kolbasa İstehsal bolumunde Istehsal tam olaraq avtomatlaşdırılıb
-              və prosesə daxil olan avadanlıqlarımız Almaniya, İtaliya və
-              Polşadan gətirilib. Fəaliyyətimiz halallıq, düzgünlük, ekoloji
-              təbiilik, daimi inkişaf, şəffaflıq və məsuliyyətlilik prinsipləri
-              üzərində qurulub. Əsas fəlsəfəmiz isə alıcıların istəklərini
-              diqqətlə dəyərləndirmək və bu istəklərə uyğun ən yüksək
-              keyfiyyətdə məhsul ərsəyə gətirməkdir.
-            </p>
+            <h1>{t("meat1")}</h1>
+            <p className="mb-0 mt-3">{t("meat2")}</p>
           </div>
 
           <div className="col-lg-8 col-12 ">
@@ -34,7 +26,7 @@ const Meat = () => {
           </div>
         </section>
 
-        <section className="statics mt-5 pt-5 mb-5 pb-5">
+        <section className="statics mt-5 pt-5 mb-5 ">
           <h2 className="mb-4">{t("meat")}</h2>
           <div className="row justify-content-between align-items-center  pb-5 meats">
             <div className="col-lg-4 col-md-6 col-12 mb-lg-0 mb-5">
