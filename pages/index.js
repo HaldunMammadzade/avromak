@@ -48,7 +48,7 @@ export default function Home() {
     dots: false,
     infinite: true,
     autoplay: true,
-    speed: 1500,
+    speed: 2000,
     autoplaySpeed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -111,7 +111,6 @@ export default function Home() {
           <img className="main-arrow w-100" src="/static/slider2.jpg" alt="" />
           <img className="main-arrow w-100" src="/static/slider3.jpg" alt="" />
           <img className="main-arrow w-100" src="/static/slider4.jpg" alt="" />
-          <img className="main-arrow w-100" src="/static/slider5.jpg" alt="" />
         </Slider>
           
         </div>

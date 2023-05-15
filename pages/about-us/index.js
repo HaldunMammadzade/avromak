@@ -29,7 +29,7 @@ const About = () => {
         </section>
 
         <section className="export overflow-hidden mt-5">
-          <div className="row border-t border-b export-1">
+          <div className="row border-t border-b export-1 my-sm-4 my-2 py-3">
             <div className="col-md-4 col-12 py-4">
               <h2>{t("vision")}</h2>
 
@@ -43,7 +43,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="row border-b ">
+          <div className="row border-b  my-sm-4 my-2 py-3">
             <div className="col-md-8 col-12 py-4">
               <img className="w-100" src="/static/about3.jpg" alt="" />
             </div>
@@ -56,7 +56,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="row  border-b export-1">
+          <div className="row  border-b export-1  my-sm-4 my-2 py-3">
             <div className="col-md-4 col-12 py-4">
               <h2>{t("goal")}</h2>
 
@@ -71,7 +71,7 @@ const About = () => {
         </section>
 
         <section className="production animated fadeInRightBig pb-4 mb-5 border-b">
-          <h2 className="my-5">{t("aboutText")}</h2>
+          <h2 className="my-5 mr-sm-5 mr-0 pr-sm-5 pr-0">{t("aboutText")}</h2>
           
           <img className="w-100" src="/static/about5.jpg" alt="" />
 

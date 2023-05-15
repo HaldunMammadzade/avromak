@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className="footer mt-5">
       <div className="footer-img d-flex ">
-        <div>
+        <div className="d-sm-block d-none">
           <img src="/static/footer1.jpg" alt="" />
         </div>
         <div>
@@ -20,7 +20,7 @@ const Footer = () => {
         <div>
           <img src="/static/footer4.jpg" alt="" />
         </div>
-        <div>
+        <div className="d-sm-block d-none">
           <img src="/static/footer5.jpg" alt="" />
         </div>
       </div>
@@ -43,7 +43,7 @@ const Footer = () => {
             <a href="/contact"> {t("contactUs")}</a>
           </div>
           <div className="d-md-none d-flex footer-address justify-content-between info mt-sm-5 mt-3 pt-sm-4 pt-0 pb-4">
-            <div className="d-flex company-info align-items-center mb-sm-0 mb-3">
+            <div className="d-sm-flex d-block company-info align-items-center mb-sm-0 mb-3">
               <span className="mr-2">{t("contact4")}:</span>
               <p className="m-0">
               {t("contact6")} <br />
@@ -51,17 +51,17 @@ const Footer = () => {
               </p>
             </div>
 
-            <div className="d-flex  company-info align-items-center mb-sm-0 mb-3">
+            <div className="d-sm-flex d-block  company-info align-items-center mb-sm-0 mb-3">
               <span className="mr-2">{t("hours")}:</span>
               <p className="m-0">08.00 – 17:00/{t("week")}</p>
             </div>
 
-            <div className="d-flex  company-info align-items-center mb-sm-0 mb-3">
+            <div className=" d-sm-flex d-block  company-info align-items-center mb-sm-0 mb-3">
               <span className="mr-2">{t("contact2")}: </span>
               <p className="m-0">office@avromak.az</p>
             </div>
 
-            <div className="d-flex  company-info align-items-center mb-sm-0 mb-3">
+            <div className="d-sm-flex d-block  company-info align-items-center mb-sm-0 mb-3">
               <span className="mr-2">{t("phone")}: </span>
               <p className="m-0">(+994) 012 310 11 16</p>
             </div>

@@ -29,20 +29,20 @@ const Rizzi = () => {
 
               <div className="p-5 border-b">
                 <p>{t("favelli3")}:</p>
-                <span>{t("butterfly1")}</span>
+                <span>{t("butterfly2")}</span>
               </div>
 
               <div className="p-5 border-b">
                 <p>{t("favelli5")}:</p>
-                <span>{t("butterfly1")}</span>
+                <span>{t("butterfly3")}</span>
               </div>
 
               <div className="p-5">
                 <p>{t("favelli7")}:</p>
-                <span><strong>{t("favelli8")}:</strong>1.3</span><br/>
-                <span><strong>{t("favelli9")}:</strong>10.7</span><br/>
-                <span><strong>{t("favelli10")}:</strong>68.4</span><br/>
-                <span><strong>{t("favelli11")}:</strong>328.1</span>
+                <span><strong>{t("favelli8")}: </strong>1.3</span><br/>
+                <span><strong>{t("favelli9")}: </strong>10.7</span><br/>
+                <span><strong>{t("favelli10")}: </strong>68.4</span><br/>
+                <span><strong>{t("favelli11")}: </strong>328.1</span>
               </div>
             </div>
           </div>

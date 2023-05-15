@@ -53,7 +53,7 @@ const Contact = () => {
             <div className="col-lg-5 col-12 mt-sm-0 mt-5">
               <div className="d-flex align-items-center mb-sm-4 mb-2">
                 <p className="mb-0 mr-5 pr-5">{t("contact4")}</p>
-                <span className="border-b pb-3">
+                <span className="border-b pb-3 w-100">
                 {t("contact6")}
                   <br /> {t("contact7")}
                 </span>
@@ -61,15 +61,15 @@ const Contact = () => {
 
               <div className="d-flex  align-items-center mb-sm-4 mb-2">
                 <p className="mb-0 mr-5 pr-5"> {t("contact5")}</p>
-                <span className="border-b pb-3">
+                <span className="border-b pb-3 w-100">
                   +994 55 226 68 88 <br /> +994 12 310 11 16 <br /> +994 55 510
                   24 21
                 </span>
               </div>
 
               <div className="d-flex align-items-center mb-sm-4 mb-2">
-                <p className="mb-0 mr-5 pr-5"> {t("contact2")}</p>
-                <span className="border-b pb-3">
+                <p className="mb-0 mr-5 pr-5"> {t("contact8")}</p>
+                <span className="border-b pb-3 w-100">
                   info@avromak.az
                   <br />
                   export@avromak.az
